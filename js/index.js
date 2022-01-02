@@ -739,7 +739,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
                 apartmentsSliderToggler()
             })
         }
-        if (window.matchMedia('(max-width: 360px)').matches){
+        if (window.matchMedia('(max-width: 480px)').matches){
             
         }
     }

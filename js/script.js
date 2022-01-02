@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
 
     // Media Queries
     function mediaQueries() {
-        if (window.matchMedia('(max-width: 640px)').matches){
+        if (window.matchMedia('(max-width: 768px)').matches){
             let header = document.querySelector('.header'),
                 headerMenu = header.querySelector('.header__menu'),
                 headerLogo = header.querySelector('.header__logo'),
