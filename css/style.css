@@ -3249,6 +3249,16 @@ s
         z-index: 2;
     }
 
+    .startpage__filter__data.days
+    {
+        width: 100%;
+    }
+
+    .startpage__filter__data.days .startpage__filter__data-item
+    {
+        width: 100%;
+    }
+
     .startpage__filter__additional
     {
         margin-right: -20px;
