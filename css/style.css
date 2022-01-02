@@ -3265,6 +3265,9 @@ s
     .apartments__body
     {
         display: grid;
+        overflow: hidden;
+
+        max-height: 60vh;
 
         grid-template-areas: 'list list'        'pages toggle';
     }
