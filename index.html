@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Reset -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+  <!-- Bootstrap -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap-grid.min.css"> -->
+
+  <!--Datepicker-->
+  <!-- <link rel="stylesheet" type="text/css" href="css/datepicker.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/datetimepicker.css">
+
+  <!-- User -->
+  <link rel="stylesheet" href="css/config.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header ">
+    <div class="header__body container">
+      <a href="" class="header__logo logo">
+        <img src="img/logo/logo.png" alt="" class="header__logo__pic logo__pic">
+        <span class="header__logo__text logo__text">Go Home Sharing</span>
+      </a>
+      <div class="header__burger">
+        <div class="header__burger-item" id="head_bg_1"></div>
+        <div class="header__burger-item" id="head_bg_2"></div>
+        <div class="header__burger-item" id="head_bg_3"></div>
+      </div>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a href="" class="header__list-link">Главная</a>
+          </li>
+          <li class="header__list-item">
+            <a href="" class="header__list-link">Промо</a>
+          </li>
+          <li class="header__list-item">
+            <a href="" class="header__list-link">Проверить бронирование</a>
+          </li>
+          <li class="header__list-item">
+            <a href="" class="header__list-link">О сервисе</a>
+          </li>
+        </ul>
+        <a href="#" class="header__app">Мобильное приложение</a>
+        <div class="header__copyright copyright">
+          <span class="header__copyright__company copyright__company">
+            <span>Go Home Sharing</span> с 2021 г.
+          </span>
+        </div>
+      </nav>
+      <div class="header__icons">
+        <div class="header__icons__apps">
+          <a href="" class="header__icons__apps-item header__icons-item ">
+            <i class="header__icons-item__pic icon-telegram"></i>
+
+            <span class="header__icons-item__text">Telegram</span>
+          </a>
+          <a href="" class="header__icons__apps-item header__icons-item ">
+            <i class="header__icons-item__pic icon-whatsapp">
+              <span class="path1"></span>
+              <span class="path2"></span>
+            </i>
+
+            <span class="header__icons-item__text">Whatsapp</span>
+          </a>
+        </div>
+        <a href="" class="header__icons__faq header__icons-item icon-question"></a>
+      </div>
+      <button class="header__account">
+        <i class="icon-account"></i>
+        Личный кабинет
+      </button>
+    </div>
+  </header>
+
+  <section class="startpage">
+    <div class="startpage__body container">
+      <div class="startpage__timer">
+        <div class="startpage__timer__container">
+          <svg class="startpage__timer__all-line">
+            <defs>
+              <linearGradient id='g1' gradientUnits='userSpaceOnUse' x1='91.04%' y1='106.51%' x2='8.96%' y2='-6.51%'>
+                <stop offset='.062' stop-color='#008d36' stop-opacity='.99' />
+                <stop offset='.212' stop-color='#6c9934' stop-opacity='.9927' />
+                <stop offset='.555' stop-color='#E9AC31' />
+                <stop offset='.604' stop-color='#F8AD32' />
+                <stop offset='1' stop-color='#E6332A' />
+              </linearGradient>
+            </defs>
+            <circle class="startpage__timer__all-line__circle" r="80" cx="50%" cy="50%">
+            </circle>
+          </svg>
+          <div class="startpage__timer__clock">00:00:00</div>
+        </div>
+      </div>
+      <h1 class="startpage__header">
+        Аренда квартир
+        <div class="startpage__city">
+          <h3 class="startpage__city__title">
+            <span>Москва</span>
+            <i class="icon-geo"></i>
+          </h3>
+          <div class="startpage__city__container">
+            <ul class="startpage__city__list">
+              <li class="startpage__city__list-item active">Москва</li>
+              <li class="startpage__city__list-item">Балашиха</li>
+              <li class="startpage__city__list-item">Королёв</li>
+              <li class="startpage__city__list-item">Люберцы</li>
+              <li class="startpage__city__list-item">Мытищи</li>
+            </ul>
+          </div>
+        </div>
+        <div class="startpage__subway">
+          <span class="startpage__subway__title">Введите станцию метро</span>
+          <nav class="startpage__subway__container">
+            <ul class="startpage__subway__list">
+              <li class="startpage__subway__list-item">Станция метро №1</li>
+              <li class="startpage__subway__list-item">Станция метро №2</li>
+              <li class="startpage__subway__list-item">Станция метро №3</li>
+              <li class="startpage__subway__list-item">Станция метро №4</li>
+              <li class="startpage__subway__list-item">Станция метро №5</li>
+              <li class="startpage__subway__list-item">Станция метро №6</li>
+              <li class="startpage__subway__list-item">Станция метро №7</li>
+              <li class="startpage__subway__list-item">Станция метро №8</li>
+              <li class="startpage__subway__list-item">Станция метро №9</li>
+              <li class="startpage__subway__list-item">Станция метро №10</li>
+            </ul>
+          </nav>
+        </div>
+      </h1>
+      <div class="startpage__filter">
+        <h2 class="startpage__filter__title">
+          <i class="icon-settings"></i> Фильтр поиска
+        </h2>
+        <div class="startpage__filter__container">
+          <div class="startpage__filter__list">
+            <div class="startpage__filter__startsettings">
+              <div class="startpage__filter__price">
+                <span class="startpage__filter__price__text">Цена, руб.</span>
+                <ul class="startpage__filter__price__list">
+                  <button class="startpage__filter__price__list-item active">Мин</button>
+                  <button class="startpage__filter__price__list-item ">Час</button>
+                  <button class="startpage__filter__price__list-item ">Сутки</button>
+                </ul>
+              </div>
+
+              <div class="startpage__filter__free">
+                <div class="startpage__filter__free__checkbox">
+                  <input type="checkbox" id="free-apart">
+                  <label for="free-apart">Свободные квартиры</label>
+                </div>
+                <div class="startpage__filter__free__checkbox">
+                  <input type="checkbox" id="no-free-apart">
+                  <label for="no-free-apart">Скоро освободятся</label>
+                </div>
+              </div>
+            </div>
+            <div class="startpage__filter__data mins active">
+              <div class="startpage__filter__data-item price dropdown">
+                <span class="startpage__filter__data-item__title dropdown__title">Цена</span>
+                <div class="startpage__filter__data-item__container dropdown__container">
+                  <ul class="startpage__filter__data-item__list dropdown__list">
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item active">7</li>
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item">8</li>
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item active">9</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="startpage__filter__data-item rooms dropdown">
+                <span class="startpage__filter__data-item__title dropdown__title">Комнаты</span>
+                <div class="startpage__filter__data-item__container dropdown__container">
+                  <ul class="startpage__filter__data-item__list dropdown__list">
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item">Студия</li>
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item active">1</li>
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item active">2</li>
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item">3</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="startpage__filter__data-item calendar">
+                <button class="calendar__btn">
+                  <span class="calendar__btn__date"></span>
+                </button>
+                <div class="calendar__container">
+                  <div class="calendar__month">
+                    <i class="calendar__prev icon-arrow-left"></i>
+                    <div class="calendar__date">
+                      <p>5 декабря 2021</p>
+                      <span>Декабрь</span>
+                    </div>
+                    <i class="calendar__next icon-arrow-right"></i>
+                  </div>
+                  <div class="calendar__weekdays">
+                    <div>Пн</div>
+                    <div>Вт</div>
+                    <div>Ср</div>
+                    <div>Чт</div>
+                    <div>Пт</div>
+                    <div>Сб</div>
+                    <div>Вс</div>
+                  </div>
+                  <div class="calendar__days">
+                    <div class="calendar__prev-date">1</div>
+                    <div>1</div>
+                    <div class="calendar__next-date">1</div>
+                  </div>
+                  <button class="calendar__send">Принять</button>
+                </div>
+              </div>
+              <div class="startpage__filter__data-item time">
+                <div class="startpage__filter__data-item__time-item time_start clock">
+                  <span class="clock__value">
+                    <span class="clock__hours">0</span>
+                    :
+                    <span class="clock__minutes">0</span>
+                  </span>
+                  <button class="clock__btn add icon-arrow-top"></button>
+                  <button class="clock__btn remove icon-arrow-bottom"></button>
+                </div>
+                <div class="startpage__filter__data-item__time-item time_end clock">
+
+                  <span class="clock__value">
+                    <span class="clock__hours">0</span>
+                    :
+                    <span class="clock__minutes">0</span>
+                  </span>
+                  <button class="clock__btn add icon-arrow-top"></button>
+                  <button class="clock__btn remove icon-arrow-bottom"></button>
+                </div>
+                <div class="startpage__filter__data-item__time-item time_duration">30</div>
+              </div>
+            </div>
+            <div class="startpage__filter__data hours ">
+              <div class="startpage__filter__data-item price dropdown">
+                <span class="startpage__filter__data-item__title dropdown__title">Цена</span>
+                <div class="startpage__filter__data-item__container dropdown__container">
+                  <ul class="startpage__filter__data-item__list dropdown__list">
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item active">250</li>
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item">400</li>
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item active">600</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="startpage__filter__data-item rooms dropdown">
+                <span class="startpage__filter__data-item__title dropdown__title">Комнаты</span>
+                <div class="startpage__filter__data-item__container dropdown__container">
+                  <ul class="startpage__filter__data-item__list dropdown__list">
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item">Студия</li>
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item active">1</li>
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item active">2</li>
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item">3</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="startpage__filter__data-item calendar">
+                <button class="calendar__btn">
+                  <span class="calendar__btn__date"></span>
+                </button>
+                <div class="calendar__container">
+                  <div class="calendar__month">
+                    <i class="calendar__prev icon-arrow-left"></i>
+                    <div class="calendar__date">
+                      <p>5 декабря 2021</p>
+                      <span>Декабрь</span>
+                    </div>
+                    <i class="calendar__next icon-arrow-right"></i>
+                  </div>
+                  <div class="calendar__weekdays">
+                    <div>Пн</div>
+                    <div>Вт</div>
+                    <div>Ср</div>
+                    <div>Чт</div>
+                    <div>Пт</div>
+                    <div>Сб</div>
+                    <div>Вс</div>
+                  </div>
+                  <div class="calendar__days">
+                    <div class="calendar__prev-date">1</div>
+                    <div>1</div>
+                    <div class="calendar__next-date">1</div>
+                  </div>
+                  <button class="calendar__send">Принять</button>
+                </div>
+              </div>
+              <div class="startpage__filter__data-item time">
+                <div class="startpage__filter__data-item__time-item time_start clock">
+                  <span class="clock__value">
+                    <span class="clock__hours">0</span>
+                    :
+                    <span class="clock__minutes">0</span>
+                  </span>
+                  <button class="clock__btn add icon-arrow-top"></button>
+                  <button class="clock__btn remove icon-arrow-bottom"></button>
+                </div>
+                <div class="startpage__filter__data-item__time-item time_end clock">
+
+                  <span class="clock__value">
+                    <span class="clock__hours">0</span>
+                    :
+                    <span class="clock__minutes">0</span>
+                  </span>
+                  <button class="clock__btn add icon-arrow-top"></button>
+                  <button class="clock__btn remove icon-arrow-bottom"></button>
+                </div>
+                <div class="startpage__filter__data-item__time-item time_duration">30</div>
+              </div>
+            </div>
+            <div class="startpage__filter__data days ">
+              <div class="startpage__filter__data-item price dropdown">
+                <span class="startpage__filter__data-item__title dropdown__title">Цена</span>
+                <div class="startpage__filter__data-item__container dropdown__container">
+                  <ul class="startpage__filter__data-item__list dropdown__list">
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item active">1000</li>
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item">1500</li>
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item active">2000</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="startpage__filter__data-item rooms dropdown">
+                <span class="startpage__filter__data-item__title dropdown__title">Комнаты</span>
+                <div class="startpage__filter__data-item__container dropdown__container">
+                  <ul class="startpage__filter__data-item__list dropdown__list">
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item">Студия</li>
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item active">1</li>
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item active">2</li>
+                    <li class="startpage__filter__data-item__list-item dropdown__list-item">3</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="startpage__filter__data-item calendar start">
+                <button class="calendar__btn">
+                  <span class="calendar__btn__date"></span>
+                  <span class="calendar__btn__time"></span>
+                </button>
+                <div class="calendar__container">
+                  <div class="calendar__month">
+                    <i class="calendar__prev icon-arrow-left"></i>
+                    <div class="calendar__date">
+                      <p>5 декабря 2021</p>
+                      <span>Декабрь</span>
+                    </div>
+                    <i class="calendar__next icon-arrow-right"></i>
+                  </div>
+                  <div class="calendar__settings">
+                    <button class="calendar__actual-date">Текущая дата</button>
+                    <button class="calendar__actual-time">Текущее время</button>
+                    <input type="time" value="" class="calendar__timepicker">
+                  </div>
+                  <div class="calendar__weekdays">
+                    <div>Пн</div>
+                    <div>Вт</div>
+                    <div>Ср</div>
+                    <div>Чт</div>
+                    <div>Пт</div>
+                    <div>Сб</div>
+                    <div>Вс</div>
+                  </div>
+                  <div class="calendar__days">
+                    <div class="calendar__prev-date">1</div>
+                    <div>1</div>
+                    <div class="calendar__next-date">1</div>
+                  </div>
+                  <button class="calendar__send">Принять</button>
+                </div>
+              </div>
+              <div class="startpage__filter__data-item calendar end">
+                <button class="calendar__btn">
+                  <span class="calendar__btn__date"></span>
+                  <span class="calendar__btn__time"></span>
+                </button>
+                <div class="calendar__container">
+                  <div class="calendar__month">
+                    <i class="calendar__prev icon-arrow-left"></i>
+                    <div class="calendar__date">
+                      <p>5 декабря 2021</p>
+                      <span>Декабрь</span>
+                    </div>
+                    <i class="calendar__next icon-arrow-right"></i>
+                  </div>
+                  <div class="calendar__settings">
+                    <button class="calendar__actual-date">Текущая дата</button>
+                    <button class="calendar__actual-time">Текущее время</button>
+                    <input type="time" value="" class="calendar__timepicker">
+                  </div>
+                  <div class="calendar__weekdays">
+                    <div>Пн</div>
+                    <div>Вт</div>
+                    <div>Ср</div>
+                    <div>Чт</div>
+                    <div>Пт</div>
+                    <div>Сб</div>
+                    <div>Вс</div>
+                  </div>
+                  <div class="calendar__days">
+                    <div class="calendar__prev-date">1</div>
+                    <div>1</div>
+                    <div class="calendar__next-date">1</div>
+                  </div>
+                  <button class="calendar__send">Принять</button>
+                </div>
+              </div>
+            </div>
+            <div class="startpage__filter__additional">
+              <ul class="startpage__filter__additional__list">
+                <li class="startpage__filter__additional__list-item active">
+                  <i class="icon-wifi"></i> Wi-fi
+                </li>
+                <li class="startpage__filter__additional__list-item active">
+                  <i class="icon-conditioner"></i>Кондиционер
+                </li>
+                <li class="startpage__filter__additional__list-item">
+                  <i class="icon-fridge"></i>Холодильник
+                </li>
+                <li class="startpage__filter__additional__list-item">
+                  <i class="icon-gameconsole"></i>Игровая приставка
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="startpage__results">
+        <button class="startpage__results-item find">Найти</button>
+        <button class="startpage__results-item type_toggle">На карте</button>
+        <span class="startpage__results-item founded">Найдено <span>39</span>
+        </span>
+      </div>
+    </div>
+  </section>
+  <section class="apartments">
+    <div class="apartments__map show-type map">
+
+      <div class="apartments__map__container">
+        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A053bd947d462cc1a45aeba4070defff75501905071c0eaf68436ac9976ec698c&amp;width=100%&amp;height=1100&amp;lang=ru_RU&amp;apikey=d6a49782-e049-4515-bff0-c41a84f7df19">
+                ymaps.ready(init);
+            </script>
+      </div>
+      <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A970f4a25e5d7084c6b176b84e94d092f89c174b9078d94269a181ccd920d1dbc&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script> -->
+    </div>
+    <div class="apartments__body container show-type list active">
+      <div class="apartments__list">
+        <div class="apartments__list-container">
+          <div class="apartments__item">
+            <span class="apartments__item__status warning">
+              <i class="icon-clock"></i> Занят до 15 сентября 15:00
+            </span>
+            <div class="apartments__item__slider slider">
+              <div class="apartments__item__slider__row slider__row">
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+              </div>
+              <div class="apartments__item__slider__dots slider__dots">
+                <button class="apartments__item__slider__dots-item slider__dots-item active"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+              </div>
+              <button class="apartments__item__slider__toggle slider__toggle prev">
+                <i class="icon-arrow-left"></i>
+              </button>
+              <button class="apartments__item__slider__toggle slider__toggle next">
+                <i class="icon-arrow-right"></i>
+              </button>
+            </div>
+            <div class="apartments__item__content">
+              <a href="#" class="apartments__item__rating">
+                <i class="icon-star"></i> 4.8 (34 отзыва)
+              </a>
+              <button class="apartments__item__favorite"></button>
+              <h3 class="apartments__item__header">
+                <a href="#">Москва, ул. Пречистенская набержная, д. 13с1</a>
+              </h3>
+              <p class="apartments__item__desc">2 комнаты, 1 двуспальная кровать, кондиционер, холодильник, Wi-Fi</p>
+              <span class="apartments__item__price">3000 руб / сутки</span>
+            </div>
+          </div>
+          <div class="apartments__item">
+            <span class="apartments__item__status free">
+              <i class="icon-clock"></i> Занят до 15 сентября 15:00
+            </span>
+            <div class="apartments__item__slider slider">
+              <div class="apartments__item__slider__row slider__row">
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+              </div>
+              <div class="apartments__item__slider__dots slider__dots">
+                <button class="apartments__item__slider__dots-item slider__dots-item active"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+              </div>
+              <button class="apartments__item__slider__toggle slider__toggle prev">
+                <i class="icon-arrow-left"></i>
+              </button>
+              <button class="apartments__item__slider__toggle slider__toggle next">
+                <i class="icon-arrow-right"></i>
+              </button>
+            </div>
+            <div class="apartments__item__content">
+              <a href="#" class="apartments__item__rating">
+                <i class="icon-star"></i> 4.8 (34 отзыва)
+              </a>
+              <button class="apartments__item__favorite"></button>
+              <h3 class="apartments__item__header">
+                <a href="#">Москва, ул. Пречистенская набержная, д. 13с1</a>
+              </h3>
+              <p class="apartments__item__desc">2 комнаты, 1 двуспальная кровать, кондиционер, холодильник, Wi-Fi</p>
+              <span class="apartments__item__price">3000 руб / сутки</span>
+            </div>
+          </div>
+          <div class="apartments__item">
+            <span class="apartments__item__status free">
+              <i class="icon-clock"></i> Занят до 15 сентября 15:00
+            </span>
+            <div class="apartments__item__slider slider">
+              <div class="apartments__item__slider__row slider__row">
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+              </div>
+              <div class="apartments__item__slider__dots slider__dots">
+                <button class="apartments__item__slider__dots-item slider__dots-item active"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+              </div>
+              <button class="apartments__item__slider__toggle slider__toggle prev">
+                <i class="icon-arrow-left"></i>
+              </button>
+              <button class="apartments__item__slider__toggle slider__toggle next">
+                <i class="icon-arrow-right"></i>
+              </button>
+            </div>
+            <div class="apartments__item__content">
+              <a href="#" class="apartments__item__rating">
+                <i class="icon-star"></i> 4.8 (34 отзыва)
+              </a>
+              <button class="apartments__item__favorite"></button>
+              <h3 class="apartments__item__header">
+                <a href="#">Москва, ул. Пречистенская набержная, д. 13с1</a>
+              </h3>
+              <p class="apartments__item__desc">2 комнаты, 1 двуспальная кровать, кондиционер, холодильник, Wi-Fi</p>
+              <span class="apartments__item__price">3000 руб / сутки</span>
+            </div>
+          </div>
+
+          <div class="apartments__item">
+            <span class="apartments__item__status free">
+              <i class="icon-clock"></i> Занят до 15 сентября 15:00
+            </span>
+            <div class="apartments__item__slider slider">
+              <div class="apartments__item__slider__row slider__row">
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+              </div>
+              <div class="apartments__item__slider__dots slider__dots">
+                <button class="apartments__item__slider__dots-item slider__dots-item active"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+              </div>
+              <button class="apartments__item__slider__toggle slider__toggle prev">
+                <i class="icon-arrow-left"></i>
+              </button>
+              <button class="apartments__item__slider__toggle slider__toggle next">
+                <i class="icon-arrow-right"></i>
+              </button>
+            </div>
+            <div class="apartments__item__content">
+              <a href="#" class="apartments__item__rating">
+                <i class="icon-star"></i> 4.8 (34 отзыва)
+              </a>
+              <button class="apartments__item__favorite"></button>
+              <h3 class="apartments__item__header">
+                <a href="#">Москва, ул. Пречистенская набержная, д. 13с1</a>
+              </h3>
+              <p class="apartments__item__desc">2 комнаты, 1 двуспальная кровать, кондиционер, холодильник, Wi-Fi</p>
+              <span class="apartments__item__price">3000 руб / сутки</span>
+            </div>
+          </div>
+          <div class="apartments__item">
+            <span class="apartments__item__status warning">
+              <i class="icon-clock"></i> Занят до 15 сентября 15:00
+            </span>
+            <div class="apartments__item__slider slider">
+              <div class="apartments__item__slider__row slider__row">
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+              </div>
+              <div class="apartments__item__slider__dots slider__dots">
+                <button class="apartments__item__slider__dots-item slider__dots-item active"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+              </div>
+              <button class="apartments__item__slider__toggle slider__toggle prev">
+                <i class="icon-arrow-left"></i>
+              </button>
+              <button class="apartments__item__slider__toggle slider__toggle next">
+                <i class="icon-arrow-right"></i>
+              </button>
+            </div>
+            <div class="apartments__item__content">
+              <a href="#" class="apartments__item__rating">
+                <i class="icon-star"></i> 4.8 (34 отзыва)
+              </a>
+              <button class="apartments__item__favorite"></button>
+              <h3 class="apartments__item__header">
+                <a href="#">Москва, ул. Пречистенская набержная, д. 13с1</a>
+              </h3>
+              <p class="apartments__item__desc">2 комнаты, 1 двуспальная кровать, кондиционер, холодильник, Wi-Fi</p>
+              <span class="apartments__item__price">3000 руб / сутки</span>
+            </div>
+          </div>
+          <div class="apartments__item">
+            <span class="apartments__item__status danger">
+              <i class="icon-clock"></i> Занят до 15 сентября 15:00
+            </span>
+            <div class="apartments__item__slider slider">
+              <div class="apartments__item__slider__row slider__row">
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+              </div>
+              <div class="apartments__item__slider__dots slider__dots">
+                <button class="apartments__item__slider__dots-item slider__dots-item active"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+              </div>
+              <button class="apartments__item__slider__toggle slider__toggle prev">
+                <i class="icon-arrow-left"></i>
+              </button>
+              <button class="apartments__item__slider__toggle slider__toggle next">
+                <i class="icon-arrow-right"></i>
+              </button>
+            </div>
+            <div class="apartments__item__content">
+              <a href="#" class="apartments__item__rating">
+                <i class="icon-star"></i> 4.8 (34 отзыва)
+              </a>
+              <button class="apartments__item__favorite"></button>
+              <h3 class="apartments__item__header">
+                <a href="#">Москва, ул. Пречистенская набержная, д. 13с1</a>
+              </h3>
+              <p class="apartments__item__desc">2 комнаты, 1 двуспальная кровать, кондиционер, холодильник, Wi-Fi</p>
+              <span class="apartments__item__price">3000 руб / сутки</span>
+            </div>
+          </div>
+
+          <div class="apartments__item">
+            <span class="apartments__item__status free">
+              <i class="icon-clock"></i> Занят до 15 сентября 15:00
+            </span>
+            <div class="apartments__item__slider slider">
+              <div class="apartments__item__slider__row slider__row">
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+              </div>
+              <div class="apartments__item__slider__dots slider__dots">
+                <button class="apartments__item__slider__dots-item slider__dots-item active"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+              </div>
+              <button class="apartments__item__slider__toggle slider__toggle prev">
+                <i class="icon-arrow-left"></i>
+              </button>
+              <button class="apartments__item__slider__toggle slider__toggle next">
+                <i class="icon-arrow-right"></i>
+              </button>
+            </div>
+            <div class="apartments__item__content">
+              <a href="#" class="apartments__item__rating">
+                <i class="icon-star"></i> 4.8 (34 отзыва)
+              </a>
+              <button class="apartments__item__favorite"></button>
+              <h3 class="apartments__item__header">
+                <a href="#">Москва, ул. Пречистенская набержная, д. 13с1</a>
+              </h3>
+              <p class="apartments__item__desc">2 комнаты, 1 двуспальная кровать, кондиционер, холодильник, Wi-Fi</p>
+              <span class="apartments__item__price">3000 руб / сутки</span>
+            </div>
+          </div>
+          <div class="apartments__item">
+            <span class="apartments__item__status free">
+              <i class="icon-clock"></i> Занят до 15 сентября 15:00
+            </span>
+            <div class="apartments__item__slider slider">
+              <div class="apartments__item__slider__row slider__row">
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+              </div>
+              <div class="apartments__item__slider__dots slider__dots">
+                <button class="apartments__item__slider__dots-item slider__dots-item active"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+              </div>
+              <button class="apartments__item__slider__toggle slider__toggle prev">
+                <i class="icon-arrow-left"></i>
+              </button>
+              <button class="apartments__item__slider__toggle slider__toggle next">
+                <i class="icon-arrow-right"></i>
+              </button>
+            </div>
+            <div class="apartments__item__content">
+              <a href="#" class="apartments__item__rating">
+                <i class="icon-star"></i> 4.8 (34 отзыва)
+              </a>
+              <button class="apartments__item__favorite"></button>
+              <h3 class="apartments__item__header">
+                <a href="#">Москва, ул. Пречистенская набержная, д. 13с1</a>
+              </h3>
+              <p class="apartments__item__desc">2 комнаты, 1 двуспальная кровать, кондиционер, холодильник, Wi-Fi</p>
+              <span class="apartments__item__price">3000 руб / сутки</span>
+            </div>
+          </div>
+          <div class="apartments__item">
+            <span class="apartments__item__status free">
+              <i class="icon-clock"></i> Занят до 15 сентября 15:00
+            </span>
+            <div class="apartments__item__slider slider">
+              <div class="apartments__item__slider__row slider__row">
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+                <div class="apartments__item__slider__item slider__item">
+                  <img src="img/attachements/apartments_slider-item_1.png" alt="">
+                </div>
+              </div>
+              <div class="apartments__item__slider__dots slider__dots">
+                <button class="apartments__item__slider__dots-item slider__dots-item active"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+                <button class="apartments__item__slider__dots-item slider__dots-item"></button>
+              </div>
+              <button class="apartments__item__slider__toggle slider__toggle prev">
+                <i class="icon-arrow-left"></i>
+              </button>
+              <button class="apartments__item__slider__toggle slider__toggle next">
+                <i class="icon-arrow-right"></i>
+              </button>
+            </div>
+            <div class="apartments__item__content">
+              <a href="#" class="apartments__item__rating">
+                <i class="icon-star"></i> 4.8 (34 отзыва)
+              </a>
+              <button class="apartments__item__favorite"></button>
+              <h3 class="apartments__item__header">
+                <a href="#">Москва, ул. Пречистенская набержная, д. 13с1</a>
+              </h3>
+              <p class="apartments__item__desc">2 комнаты, 1 двуспальная кровать, кондиционер, холодильник, Wi-Fi</p>
+              <span class="apartments__item__price">3000 руб / сутки</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="apartments__pages">
+        <span class="apartments__pages__start">
+          <a href="#" class="apartments__pages__btn active">1</a>
+          <a href="#" class="apartments__pages__btn">2</a>
+          <a href="#" class="apartments__pages__btn">3</a>
+        </span>
+        <span class="apartments__pages__end">
+          <a href="#" class="apartments__pages__btn">7</a>
+        </span>
+      </div>
+      <div class="apartments__toggle">
+        <button class="apartments__toggle-btn prev">
+          <i class="icon-arrow-left"></i>
+        </button>
+        <button class="apartments__toggle-btn next">
+          <i class="icon-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="about__body container">
+      <div class="about__info">
+        <h1 class="about__header">Возникли вопросы?</h1>
+        <h2 class="about__subheader">Узнайте, как эффективно взаимодействовать с сервисом, воспользовавшись обучающими материалами, размещёнными на сайте.</h2>
+        <div class="about__services">
+          <button class="about__services-btn">
+            <i class="icon-message"></i>Задать вопрос
+          </button>
+          <button class="about__services-btn">
+            <i class="icon-play"></i>О сервисе
+          </button>
+        </div>
+      </div>
+      <img src="img/attachements/about_pic.png" alt="" class="about__pic">
+    </div>
+  </section>
+  <section class="work">
+    <div class="work__body container">
+      <h1 class="work__header">Как мы работаем</h1>
+      <div class="work__steps slider">
+        <div class="work__steps__row-container slider__row-container">
+          <div class="work__steps__row slider__row">
+            <div class="work__steps__item slider__item">
+              <span class="work__steps__id">1</span>
+              <span class="work__steps__header">Шаг первый</span>
+              <h2 class="work__steps__subheader">Выберите квартиру и оплатите аренду на нужные даты и время.</h2>
+            </div>
+            <div class="work__steps__item slider__item">
+              <span class="work__steps__id">2</span>
+              <span class="work__steps__header">Шаг второй</span>
+              <h2 class="work__steps__subheader">Выберите квартиру и оплатите аренду на нужные даты и время.</h2>
+            </div>
+            <div class="work__steps__item slider__item">
+              <span class="work__steps__id">3</span>
+              <span class="work__steps__header">Шаг третий</span>
+              <h2 class="work__steps__subheader">Выберите квартиру и оплатите аренду на нужные даты и время.</h2>
+            </div>
+            <div class="work__steps__item slider__item">
+              <span class="work__steps__id">4</span>
+              <span class="work__steps__header">Шаг четвертый</span>
+              <h2 class="work__steps__subheader">Выберите квартиру и оплатите аренду на нужные даты и время.</h2>
+            </div>
+            <div class="work__steps__item slider__item">
+              <span class="work__steps__id">5</span>
+              <span class="work__steps__header">Шаг пятый</span>
+              <h2 class="work__steps__subheader">Выберите квартиру и оплатите аренду на нужные даты и время.</h2>
+            </div>
+          </div>
+        </div>
+        <div class="work__steps__dots slider__dots">
+          <button class="work__steps__dots-item slider__dots-item active"></button>
+          <button class="work__steps__dots-item slider__dots-item"></button>
+          <button class="work__steps__dots-item slider__dots-item"></button>
+          <button class="work__steps__dots-item slider__dots-item"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__body container">
+      <div class="footer__menu">
+        <a href="" class="footer__menu__logo logo">
+          <img src="img/logo/logo.png" alt="" class="footer__menu__logo__pic logo__pic">
+          <span class="footer__menu__logo__text logo__text">Go Home Sharing</span>
+        </a>
+        <ul class="footer__menu__list">
+          <li class="footer__menu__list-item">
+            <a href="" class="footer__menu__list-link">Главная</a>
+          </li>
+          <li class="footer__menu__list-item">
+            <a href="" class="footer__menu__list-link">Проверить бронирование</a>
+          </li>
+          <li class="footer__menu__list-item">
+            <a href="" class="footer__menu__list-link">О сервисе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__content">
+        <button class="footer__content__item question">
+          <i class="icon-message"></i>
+          <span>Задать вопрос</span>
+        </button>
+        <a href="" class="footer__content__item telegram">
+          <i class="icon-telegram"></i>
+          <span>Telegram</span>
+        </a>
+        <a href="" class="footer__content__item whatsapp">
+          <i class="icon-whatsapp">
+            <span class="path1"></span>
+            <span class="path2"></span>
+          </i>
+          <span>Whatsapp</span>
+        </a>
+      </div>
+      <div class="footer__copyright copyright">
+        <span class="footer__copyright__company copyright__company">
+          <span>Go Home Sharing</span> с 2021 г.
+        </span>
+        <a href="https://it-touch.ru/" class="footer__copyright__developer copyright__developer" target="_blank">
+          <img src="img/logo/developer.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <div class="calendar__modal"></div>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <!-- Bootstrap -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script> -->
+
+  <!-- Masked Input -->
+  <!-- <script src="js/maskedinput.js"></script> -->
+
+  <!-- Datepicker -->
+  <!-- <script src="js/datepicker.js"></script> -->
+  <!-- <script src="js/datetimepicker.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/i18n/jquery-ui-timepicker-addon-i18n.min.js"></script>
+  <!-- User -->
+  <script src="js/config.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
